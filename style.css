@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #ffebd2;
+}
+
+header {
+    position: relative;
+}
+
+header .navbar {
+    background: #273248;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar-inner .brand-logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .navbar .navbar-inner {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar-submenu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: -100vh;
+    background: #273248;
+    /* -wbkit- 크롬 브라우저 */
+    -webkit-transition: .5s ease-in-out;
+    /* -moz- 파이어폭스 브라우저 */
+    -moz-transition: .5s ease-in-out;
+    /* -o- 오페라 브라우저 */
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+header .navbar-submenu.show {
+    top: 80px;
+}
+
+.navbar-submenu .submenu-list {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar-submenu .submenu-list li {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+.submenu-list li a {
+    color: #fff;
+}
+
+.navbar-inner .btn-submenu {
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.btn-submenu span {
+    background: #fff;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.btn-submenu span:nth-child(2) {
+    margin-top: 6px;
+}
+
+.btn-submenu span:last-child {
+    margin-top: 6px;
+}
+
+.btn-submenu.active span:first-child {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.btn-submenu.active span:nth-child(2) {
+    left: -32px;
+    margin-top: 0;
+    position: absolute;
+}
+
+.btn-submenu.active span:last-child {
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-top: 0px;
+}
+
+article section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.section1 {
+    background: #ffa364;
+}
+
+.section2 {
+    background: #fc7643;
+}
